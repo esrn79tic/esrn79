@@ -1,0 +1,40 @@
+@import url(spectre.css);
+
+:root {
+    --bg-color: #fbfbfb;
+    --color-primary: #ea3b19;    /* brand color */
+    --color-lightGrey: #f3f3f3;
+    --color-grey: #153b50;
+    /* --grid-maxWidth: 108rem; */
+    --max-container-width: 1080px;
+}
+
+.full {
+    background-color: var(--bg-color);
+    display: block;
+    min-height: 100vh;
+    max-width: var(--max-container-width);
+}
+
+.zona-central {
+    display: block;
+    min-height: calc(100vh - 96px);
+    overflow-y: scroll;
+}
+
+.navbar {
+    background-color: var(--color-lightGrey);
+    box-shadow: 0 4px 4px -3px #777;
+}
+
+.card {
+    margin-top: calc((100vh - 415px) / 2);
+}
+
+.logo-centro {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 96px);
+    justify-content: center;
+    align-items: center;
+}
